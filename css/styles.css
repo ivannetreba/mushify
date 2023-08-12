@@ -213,7 +213,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -280,6 +280,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1300px) {
+  .btn {
+    padding: 2rem 5.2rem;
+  }
+}
+
 
 /* Inputs */
 
@@ -306,6 +312,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -777,6 +784,7 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
@@ -787,11 +795,19 @@ a {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 370px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
+
+
 
 
 /* Plans Block */

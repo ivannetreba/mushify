@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
 
@@ -86,7 +87,7 @@
     </section>
 
     <!-- Plans block -->
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="zoom-in">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -159,7 +160,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, voluptatem.
         </p>
       </header>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature" data-aos="zoom-in">
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -185,7 +186,7 @@
           <img class="feature__image" src="images/easy@2x.jpg" alt="" />
         </picture>
       </article>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature" data-aos="zoom-in">
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -211,7 +212,7 @@
           <img class="feature__image" src="images/fast@2x.jpg" alt="" />
         </picture>
       </article>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature" data-aos="zoom-in">
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -237,7 +238,7 @@
           <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
         </picture>
       </article>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature" data-aos="zoom-in">
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -266,7 +267,7 @@
     </section>
 
     <!-- Showcase block -->
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block block--dark block--skewed-right block-showcase" data-aos="zoom-in">
       <header class="block__header">
         <h2>User-friendly Control Panel</h2>
       </header>
@@ -339,7 +340,7 @@
     </section>
 
     <!-- Testimonal block -->
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam.</p>
@@ -381,7 +382,7 @@
     </section>
 
     <!-- Callouts -->
-    <div class="container">
+    <div class="container" data-aos="zoom-in">
       <div class="callout callout--primary callout-signup">
         <div class="grid grid--1x2">
           <div class="callout__content">
@@ -467,6 +468,13 @@
       </div>
     </footer>
     
+    <!-- Make Collapsing -->
     <script src="js/main.js"></script>
+    
+    <!-- Block Animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
